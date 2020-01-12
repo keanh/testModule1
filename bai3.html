@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tuổi</title>
+</head>
+<body>
+    <input type="text" id="age" value="">
+    <input type="button" value="Tính" onclick="tinhTuoi()">
+    <div id="result"></div>
+
+    <script>
+        let a;
+        let sotuoi=0;
+        function tinhTuoi() {
+            a=document.getElementById("age").value;
+            if (a<=2020){
+                sotuoi=2020-a;
+                document.getElementById("result").innerHTML="Số tuổi là: " + sotuoi +" tuổi";
+            }else{
+                alert("Không hợp lệ")
+            }
+        }
+    </script>
+</body>
+</html>
