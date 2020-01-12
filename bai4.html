@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<script>
+    function tongDuongCheoChinhMaTranVuong(array) {
+        let tong = 0;
+
+        for(let i = 0; i < array.length; i++){
+            tong += array[i][i];
+        }
+        return tong;
+    }
+
+    let maTranVuong = [
+        [5,6,-2],
+        [1,-8,-9],
+        [21,40,-15],
+    ];
+
+    document.write("Tổng đường chéo chính ma trận vuông là: " + tongDuongCheoChinhMaTranVuong(maTranVuong));
+
+
+
+
+</script>
+</body>
+</html>
