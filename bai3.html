@@ -14,10 +14,14 @@
         let sotuoi=0;
         function tinhTuoi() {
             a=document.getElementById("age").value;
-            if (a<=2020){
-                sotuoi=2020-a;
-                document.getElementById("result").innerHTML="Số tuổi là: " + sotuoi +" tuổi";
-            }else{
+            let today=new Date();
+            let year=today.getFullYear();
+            if (a<year){
+                sotuoi=year-a;
+                document.getElementById("result").innerHTML="Số tuổi của bạn là: " + sotuoi;
+            }else if (a==year){
+                alert("Bạn vừa mới sinh.")
+            }else {
                 alert("Không hợp lệ")
             }
         }
